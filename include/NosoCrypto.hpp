@@ -2,22 +2,26 @@
 #ifndef NOSOCRYPTO_H
 #define NOSOCRYPTO_H
 
+#include "Constants.hpp"
 #include <botan/base58.h>
 #include <botan/base64.h>
 #include <botan/bigint.h>
 #include <botan/hex.h>
 #include <botan/rmd160.h>
 #include <botan/sha2_32.h>
-#include "LibStruct.hpp"
-#include "Constants.hpp"
 
-#include <string>
 #include <bitset>
 #include <cstdint>
+#include <string>
+
+class DivResult {
+public:
+  Botan::BigInt Quotient;
+  Botan::BigInt Remainder;
+};
 
 class NosoCrypto {
 public:
-
   int B58Sum(const std::string &number58);
   std::string DecTo58(const std::string &number);
   DivResult DivideBigInt(const Botan::BigInt &numerator,
