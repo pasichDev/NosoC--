@@ -1,4 +1,4 @@
-#include "../include/Signer.h"
+#include "../include/Signer.hpp"
 
 std::vector<unsigned char>
 NosoSigner::nosoBase64Decode(const std::string &input) {

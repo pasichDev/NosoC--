@@ -8,8 +8,8 @@
 #include <botan/hex.h>
 #include <botan/rmd160.h>
 #include <botan/sha2_32.h>
-#include "LibStruct.h"
-#include "Constants.h"
+#include "LibStruct.hpp"
+#include "Constants.hpp"
 
 #include <string>
 #include <bitset>

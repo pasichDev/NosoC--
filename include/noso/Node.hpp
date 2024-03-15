@@ -2,7 +2,7 @@
 #ifndef NODE_H
 #define NODE_H
 
-#include "Seed.h"
+#include "Seed.hpp"
 #include <string>
 
 class Node {

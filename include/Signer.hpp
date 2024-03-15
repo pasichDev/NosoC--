@@ -2,8 +2,8 @@
 #ifndef SIGNER_H
 #define SIGNER_H
 
-#include "Compiler.h"
-#include "Constants.h"
+#include "Compiler.hpp"
+#include "Constants.hpp"
 #include <bitset>
 #include <botan/base64.h>
 #include <botan/bigint.h>
